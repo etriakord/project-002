@@ -1,6 +1,6 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -14,52 +14,54 @@ body {
     display: flex;
     gap: 20px;
     justify-content: space-between;
-
-
+    align-items: center;
 }
 
 .logo {
+    color: white;
+    font-size: 28px;
     font-weight: bold;
     text-decoration: none;
-    font-size: 28px;
-    color: white;
 }
 
 .logo span {
-    color: skyblue;
+    color: #1cd3da;
 }
 
 .nav-links {
     display: flex;
-    gap: 20px;
     list-style: none;
+    gap: 20px;
+
 }
 
 .nav-links a {
     color: white;
     font-size: 16px;
     text-decoration: none;
-
 }
 
-.nav-links a:hover {
-    color: skyblue;
-    text-decoration: underline;
 
+.nav-links a:hover {
+    color: #1cd3da;
+    text-decoration: underline;
 }
 
 .join-us {
-    background-color: skyblue;
+    background-color: #1cd3da;
     color: white;
     border-radius: 12px;
     padding: 8px 20px;
     text-decoration: none;
 }
 
-@media(max-width:700px){
-  .navbar{flex-direction:column;}
-  .nav-links{
-    flex-wrap:wrap;
-    justify-content: center;
-  }
+@media(max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
